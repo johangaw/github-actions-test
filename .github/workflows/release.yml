@@ -1,4 +1,4 @@
-name: Bump version
+name: Create release
 on:
   push:
     branches:
@@ -31,3 +31,4 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./my-atrifact.txt
         asset_name: my-atrifact.txt
+        asset_content_type: text/plain
