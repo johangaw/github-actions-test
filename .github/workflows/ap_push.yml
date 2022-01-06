@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print data
-      run: echo "GITHUB_SHA=${GITHUB_SHA}   GITHUB_REF=${GITHUB_REF}"
+      run: echo "GITHUB_SHA=${GITHUB_SHA}   GITHUB_REF=${GITHUB_REF}   TAG_NAME=$(git describe $GITHUB_SHA --tags)"
